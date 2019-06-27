@@ -8,12 +8,98 @@
 
 /* Begin PBXBuildFile section */
 		BB83AA0F22C56BFA007D1930 /* RKCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = BB83AA0D22C56BFA007D1930 /* RKCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB83AA1822C572B3007D1930 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA1722C572B3007D1930 /* UITableView.swift */; };
+		BB83AA1B22C572D7007D1930 /* AdapterScrollViewCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA1A22C572D7007D1930 /* AdapterScrollViewCallbacks.swift */; };
+		BB83AA2C22C5730E007D1930 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA1F22C5730E007D1930 /* Array+Extensions.swift */; };
+		BB83AA2D22C5730E007D1930 /* DeepHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2022C5730E007D1930 /* DeepHashable.swift */; };
+		BB83AA2E22C5730E007D1930 /* DeepDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2122C5730E007D1930 /* DeepDiff.swift */; };
+		BB83AA2F22C5730E007D1930 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2322C5730E007D1930 /* WagnerFischer.swift */; };
+		BB83AA3022C5730E007D1930 /* DiffAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2422C5730E007D1930 /* DiffAware.swift */; };
+		BB83AA3122C5730E007D1930 /* Heckel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2522C5730E007D1930 /* Heckel.swift */; };
+		BB83AA3222C5730E007D1930 /* MoveReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2622C5730E007D1930 /* MoveReducer.swift */; };
+		BB83AA3322C5730E007D1930 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2722C5730E007D1930 /* Change.swift */; };
+		BB83AA3422C5730E007D1930 /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2922C5730E007D1930 /* IndexPathConverter.swift */; };
+		BB83AA3522C5730E007D1930 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2A22C5730E007D1930 /* UITableView+Extensions.swift */; };
+		BB83AA3622C5730E007D1930 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA2B22C5730E007D1930 /* UICollectionView+Extensions.swift */; };
+		BB83AA3A22C57339007D1930 /* UICollectionView+BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3822C57339007D1930 /* UICollectionView+BatchUpdater.swift */; };
+		BB83AA3B22C57339007D1930 /* UITableView+BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3922C57339007D1930 /* UITableView+BatchUpdater.swift */; };
+		BB83AA4122C5734D007D1930 /* SectionsChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3C22C5734D007D1930 /* SectionsChanges.swift */; };
+		BB83AA4222C5734D007D1930 /* ChangedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3D22C5734D007D1930 /* ChangedData.swift */; };
+		BB83AA4322C5734D007D1930 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3E22C5734D007D1930 /* Box.swift */; };
+		BB83AA4422C5734D007D1930 /* RowsChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA3F22C5734D007D1930 /* RowsChanges.swift */; };
+		BB83AA4522C5734D007D1930 /* BatchUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4022C5734D007D1930 /* BatchUpdater.swift */; };
+		BB83AA4A22C57392007D1930 /* CollectionViewAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4722C57392007D1930 /* CollectionViewAdapterDelegate.swift */; };
+		BB83AA4B22C57392007D1930 /* CollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4822C57392007D1930 /* CollectionViewAdapter.swift */; };
+		BB83AA4C22C57392007D1930 /* CollectionAdapterCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4922C57392007D1930 /* CollectionAdapterCallbacks.swift */; };
+		BB83AA5222C573B3007D1930 /* TableRowSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4E22C573B3007D1930 /* TableRowSwitch.swift */; };
+		BB83AA5322C573B3007D1930 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA4F22C573B3007D1930 /* TableViewAdapter.swift */; };
+		BB83AA5422C573B3007D1930 /* TableViewAdapterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5022C573B3007D1930 /* TableViewAdapterDelegate.swift */; };
+		BB83AA5522C573B3007D1930 /* TableAdapterCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5122C573B3007D1930 /* TableAdapterCallbacks.swift */; };
+		BB83AA5B22C573F5007D1930 /* AdapterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5A22C573F5007D1930 /* AdapterList.swift */; };
+		BB83AA5F22C57407007D1930 /* CollectionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5C22C57407007D1930 /* CollectionSection.swift */; };
+		BB83AA6022C57407007D1930 /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5D22C57407007D1930 /* TableSection.swift */; };
+		BB83AA6122C57407007D1930 /* AdapterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA5E22C57407007D1930 /* AdapterSection.swift */; };
+		BB83AA6422C57416007D1930 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6222C57416007D1930 /* TableRow.swift */; };
+		BB83AA6522C57416007D1930 /* CollectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6322C57416007D1930 /* CollectionItem.swift */; };
+		BB83AA6922C5745D007D1930 /* CellCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6722C5745D007D1930 /* CellCalculator.swift */; };
+		BB83AA6A22C5745D007D1930 /* CellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6822C5745D007D1930 /* CellLayout.swift */; };
+		BB83AA6E22C5747A007D1930 /* ConfigurableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6C22C5747A007D1930 /* ConfigurableCell.swift */; };
+		BB83AA6F22C5747A007D1930 /* UniqIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA6D22C5747A007D1930 /* UniqIdentifier.swift */; };
+		BB83AA7422C57499007D1930 /* ItemConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7122C57499007D1930 /* ItemConfigurable.swift */; };
+		BB83AA7522C57499007D1930 /* TableRowConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7222C57499007D1930 /* TableRowConfigurable.swift */; };
+		BB83AA7622C57499007D1930 /* CollectionItemConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7322C57499007D1930 /* CollectionItemConfigurable.swift */; };
+		BB83AA7B22C574B7007D1930 /* SuperCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7822C574B7007D1930 /* SuperCellVM.swift */; };
+		BB83AA7C22C574B7007D1930 /* TableCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7922C574B7007D1930 /* TableCellVM.swift */; };
+		BB83AA7D22C574B7007D1930 /* CollectionCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83AA7A22C574B7007D1930 /* CollectionCellVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB83AA0A22C56BFA007D1930 /* RKCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB83AA0D22C56BFA007D1930 /* RKCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKCollections.h; sourceTree = "<group>"; };
 		BB83AA0E22C56BFA007D1930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB83AA1722C572B3007D1930 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		BB83AA1A22C572D7007D1930 /* AdapterScrollViewCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterScrollViewCallbacks.swift; sourceTree = "<group>"; };
+		BB83AA1F22C5730E007D1930 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BB83AA2022C5730E007D1930 /* DeepHashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepHashable.swift; sourceTree = "<group>"; };
+		BB83AA2122C5730E007D1930 /* DeepDiff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepDiff.swift; sourceTree = "<group>"; };
+		BB83AA2322C5730E007D1930 /* WagnerFischer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WagnerFischer.swift; sourceTree = "<group>"; };
+		BB83AA2422C5730E007D1930 /* DiffAware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffAware.swift; sourceTree = "<group>"; };
+		BB83AA2522C5730E007D1930 /* Heckel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heckel.swift; sourceTree = "<group>"; };
+		BB83AA2622C5730E007D1930 /* MoveReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveReducer.swift; sourceTree = "<group>"; };
+		BB83AA2722C5730E007D1930 /* Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
+		BB83AA2922C5730E007D1930 /* IndexPathConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathConverter.swift; sourceTree = "<group>"; };
+		BB83AA2A22C5730E007D1930 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		BB83AA2B22C5730E007D1930 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		BB83AA3822C57339007D1930 /* UICollectionView+BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+BatchUpdater.swift"; sourceTree = "<group>"; };
+		BB83AA3922C57339007D1930 /* UITableView+BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+BatchUpdater.swift"; sourceTree = "<group>"; };
+		BB83AA3C22C5734D007D1930 /* SectionsChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsChanges.swift; sourceTree = "<group>"; };
+		BB83AA3D22C5734D007D1930 /* ChangedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangedData.swift; sourceTree = "<group>"; };
+		BB83AA3E22C5734D007D1930 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		BB83AA3F22C5734D007D1930 /* RowsChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowsChanges.swift; sourceTree = "<group>"; };
+		BB83AA4022C5734D007D1930 /* BatchUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchUpdater.swift; sourceTree = "<group>"; };
+		BB83AA4722C57392007D1930 /* CollectionViewAdapterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapterDelegate.swift; sourceTree = "<group>"; };
+		BB83AA4822C57392007D1930 /* CollectionViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewAdapter.swift; sourceTree = "<group>"; };
+		BB83AA4922C57392007D1930 /* CollectionAdapterCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterCallbacks.swift; sourceTree = "<group>"; };
+		BB83AA4E22C573B3007D1930 /* TableRowSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowSwitch.swift; sourceTree = "<group>"; };
+		BB83AA4F22C573B3007D1930 /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		BB83AA5022C573B3007D1930 /* TableViewAdapterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapterDelegate.swift; sourceTree = "<group>"; };
+		BB83AA5122C573B3007D1930 /* TableAdapterCallbacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterCallbacks.swift; sourceTree = "<group>"; };
+		BB83AA5A22C573F5007D1930 /* AdapterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterList.swift; sourceTree = "<group>"; };
+		BB83AA5C22C57407007D1930 /* CollectionSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionSection.swift; sourceTree = "<group>"; };
+		BB83AA5D22C57407007D1930 /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		BB83AA5E22C57407007D1930 /* AdapterSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSection.swift; sourceTree = "<group>"; };
+		BB83AA6222C57416007D1930 /* TableRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		BB83AA6322C57416007D1930 /* CollectionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionItem.swift; sourceTree = "<group>"; };
+		BB83AA6722C5745D007D1930 /* CellCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCalculator.swift; sourceTree = "<group>"; };
+		BB83AA6822C5745D007D1930 /* CellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellLayout.swift; sourceTree = "<group>"; };
+		BB83AA6C22C5747A007D1930 /* ConfigurableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurableCell.swift; sourceTree = "<group>"; };
+		BB83AA6D22C5747A007D1930 /* UniqIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqIdentifier.swift; sourceTree = "<group>"; };
+		BB83AA7122C57499007D1930 /* ItemConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemConfigurable.swift; sourceTree = "<group>"; };
+		BB83AA7222C57499007D1930 /* TableRowConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowConfigurable.swift; sourceTree = "<group>"; };
+		BB83AA7322C57499007D1930 /* CollectionItemConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionItemConfigurable.swift; sourceTree = "<group>"; };
+		BB83AA7822C574B7007D1930 /* SuperCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperCellVM.swift; sourceTree = "<group>"; };
+		BB83AA7922C574B7007D1930 /* TableCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellVM.swift; sourceTree = "<group>"; };
+		BB83AA7A22C574B7007D1930 /* CollectionCellVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +132,205 @@
 		BB83AA0C22C56BFA007D1930 /* RKCollections */ = {
 			isa = PBXGroup;
 			children = (
+				BB83AA1C22C5730E007D1930 /* libs */,
+				BB83AA1522C56BFF007D1930 /* sources */,
 				BB83AA0D22C56BFA007D1930 /* RKCollections.h */,
 				BB83AA0E22C56BFA007D1930 /* Info.plist */,
 			);
 			path = RKCollections;
+			sourceTree = "<group>";
+		};
+		BB83AA1522C56BFF007D1930 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA5622C573C2007D1930 /* Models */,
+				BB83AA4D22C573AA007D1930 /* TableAdapter */,
+				BB83AA4622C57384007D1930 /* CollectionAdapter */,
+				BB83AA3722C5731A007D1930 /* BatchUpdater */,
+				BB83AA1922C572CB007D1930 /* AdapterCallbacks */,
+				BB83AA1622C572A2007D1930 /* Extensions */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		BB83AA1622C572A2007D1930 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA3822C57339007D1930 /* UICollectionView+BatchUpdater.swift */,
+				BB83AA3922C57339007D1930 /* UITableView+BatchUpdater.swift */,
+				BB83AA1722C572B3007D1930 /* UITableView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BB83AA1922C572CB007D1930 /* AdapterCallbacks */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA1A22C572D7007D1930 /* AdapterScrollViewCallbacks.swift */,
+			);
+			name = AdapterCallbacks;
+			sourceTree = "<group>";
+		};
+		BB83AA1C22C5730E007D1930 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA1D22C5730E007D1930 /* DeepDiff */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		BB83AA1D22C5730E007D1930 /* DeepDiff */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA1E22C5730E007D1930 /* Shared */,
+				BB83AA2822C5730E007D1930 /* iOS */,
+			);
+			path = DeepDiff;
+			sourceTree = "<group>";
+		};
+		BB83AA1E22C5730E007D1930 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA1F22C5730E007D1930 /* Array+Extensions.swift */,
+				BB83AA2022C5730E007D1930 /* DeepHashable.swift */,
+				BB83AA2122C5730E007D1930 /* DeepDiff.swift */,
+				BB83AA2222C5730E007D1930 /* Algorithms */,
+				BB83AA2622C5730E007D1930 /* MoveReducer.swift */,
+				BB83AA2722C5730E007D1930 /* Change.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BB83AA2222C5730E007D1930 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA2322C5730E007D1930 /* WagnerFischer.swift */,
+				BB83AA2422C5730E007D1930 /* DiffAware.swift */,
+				BB83AA2522C5730E007D1930 /* Heckel.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		BB83AA2822C5730E007D1930 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA2922C5730E007D1930 /* IndexPathConverter.swift */,
+				BB83AA2A22C5730E007D1930 /* UITableView+Extensions.swift */,
+				BB83AA2B22C5730E007D1930 /* UICollectionView+Extensions.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BB83AA3722C5731A007D1930 /* BatchUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA4022C5734D007D1930 /* BatchUpdater.swift */,
+				BB83AA3E22C5734D007D1930 /* Box.swift */,
+				BB83AA3D22C5734D007D1930 /* ChangedData.swift */,
+				BB83AA3F22C5734D007D1930 /* RowsChanges.swift */,
+				BB83AA3C22C5734D007D1930 /* SectionsChanges.swift */,
+			);
+			name = BatchUpdater;
+			sourceTree = "<group>";
+		};
+		BB83AA4622C57384007D1930 /* CollectionAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA4922C57392007D1930 /* CollectionAdapterCallbacks.swift */,
+				BB83AA4822C57392007D1930 /* CollectionViewAdapter.swift */,
+				BB83AA4722C57392007D1930 /* CollectionViewAdapterDelegate.swift */,
+			);
+			name = CollectionAdapter;
+			sourceTree = "<group>";
+		};
+		BB83AA4D22C573AA007D1930 /* TableAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA5122C573B3007D1930 /* TableAdapterCallbacks.swift */,
+				BB83AA4E22C573B3007D1930 /* TableRowSwitch.swift */,
+				BB83AA4F22C573B3007D1930 /* TableViewAdapter.swift */,
+				BB83AA5022C573B3007D1930 /* TableViewAdapterDelegate.swift */,
+			);
+			name = TableAdapter;
+			sourceTree = "<group>";
+		};
+		BB83AA5622C573C2007D1930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA6B22C57468007D1930 /* Additionals */,
+				BB83AA6622C57450007D1930 /* ItemSizeCalculator */,
+				BB83AA5722C573CB007D1930 /* List */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB83AA5722C573CB007D1930 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA5A22C573F5007D1930 /* AdapterList.swift */,
+				BB83AA5922C573E4007D1930 /* Section */,
+				BB83AA5822C573DF007D1930 /* Item */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		BB83AA5822C573DF007D1930 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA6322C57416007D1930 /* CollectionItem.swift */,
+				BB83AA6222C57416007D1930 /* TableRow.swift */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		BB83AA5922C573E4007D1930 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA5E22C57407007D1930 /* AdapterSection.swift */,
+				BB83AA5C22C57407007D1930 /* CollectionSection.swift */,
+				BB83AA5D22C57407007D1930 /* TableSection.swift */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
+		BB83AA6622C57450007D1930 /* ItemSizeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA6722C5745D007D1930 /* CellCalculator.swift */,
+				BB83AA6822C5745D007D1930 /* CellLayout.swift */,
+			);
+			name = ItemSizeCalculator;
+			sourceTree = "<group>";
+		};
+		BB83AA6B22C57468007D1930 /* Additionals */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA7722C574A5007D1930 /* CellViewModel */,
+				BB83AA7022C57487007D1930 /* ItemConfigurable */,
+				BB83AA6C22C5747A007D1930 /* ConfigurableCell.swift */,
+				BB83AA6D22C5747A007D1930 /* UniqIdentifier.swift */,
+			);
+			name = Additionals;
+			sourceTree = "<group>";
+		};
+		BB83AA7022C57487007D1930 /* ItemConfigurable */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA7322C57499007D1930 /* CollectionItemConfigurable.swift */,
+				BB83AA7122C57499007D1930 /* ItemConfigurable.swift */,
+				BB83AA7222C57499007D1930 /* TableRowConfigurable.swift */,
+			);
+			name = ItemConfigurable;
+			sourceTree = "<group>";
+		};
+		BB83AA7722C574A5007D1930 /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB83AA7A22C574B7007D1930 /* CollectionCellVM.swift */,
+				BB83AA7822C574B7007D1930 /* SuperCellVM.swift */,
+				BB83AA7922C574B7007D1930 /* TableCellVM.swift */,
+			);
+			name = CellViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +376,7 @@
 				TargetAttributes = {
 					BB83AA0922C56BFA007D1930 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +412,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB83AA3422C5730E007D1930 /* IndexPathConverter.swift in Sources */,
+				BB83AA4122C5734D007D1930 /* SectionsChanges.swift in Sources */,
+				BB83AA4B22C57392007D1930 /* CollectionViewAdapter.swift in Sources */,
+				BB83AA4A22C57392007D1930 /* CollectionViewAdapterDelegate.swift in Sources */,
+				BB83AA3A22C57339007D1930 /* UICollectionView+BatchUpdater.swift in Sources */,
+				BB83AA1B22C572D7007D1930 /* AdapterScrollViewCallbacks.swift in Sources */,
+				BB83AA3322C5730E007D1930 /* Change.swift in Sources */,
+				BB83AA3522C5730E007D1930 /* UITableView+Extensions.swift in Sources */,
+				BB83AA5322C573B3007D1930 /* TableViewAdapter.swift in Sources */,
+				BB83AA6922C5745D007D1930 /* CellCalculator.swift in Sources */,
+				BB83AA6422C57416007D1930 /* TableRow.swift in Sources */,
+				BB83AA6A22C5745D007D1930 /* CellLayout.swift in Sources */,
+				BB83AA2C22C5730E007D1930 /* Array+Extensions.swift in Sources */,
+				BB83AA2E22C5730E007D1930 /* DeepDiff.swift in Sources */,
+				BB83AA7622C57499007D1930 /* CollectionItemConfigurable.swift in Sources */,
+				BB83AA4C22C57392007D1930 /* CollectionAdapterCallbacks.swift in Sources */,
+				BB83AA6F22C5747A007D1930 /* UniqIdentifier.swift in Sources */,
+				BB83AA5F22C57407007D1930 /* CollectionSection.swift in Sources */,
+				BB83AA4522C5734D007D1930 /* BatchUpdater.swift in Sources */,
+				BB83AA5522C573B3007D1930 /* TableAdapterCallbacks.swift in Sources */,
+				BB83AA3122C5730E007D1930 /* Heckel.swift in Sources */,
+				BB83AA7D22C574B7007D1930 /* CollectionCellVM.swift in Sources */,
+				BB83AA4322C5734D007D1930 /* Box.swift in Sources */,
+				BB83AA3022C5730E007D1930 /* DiffAware.swift in Sources */,
+				BB83AA5B22C573F5007D1930 /* AdapterList.swift in Sources */,
+				BB83AA4422C5734D007D1930 /* RowsChanges.swift in Sources */,
+				BB83AA3B22C57339007D1930 /* UITableView+BatchUpdater.swift in Sources */,
+				BB83AA5222C573B3007D1930 /* TableRowSwitch.swift in Sources */,
+				BB83AA7B22C574B7007D1930 /* SuperCellVM.swift in Sources */,
+				BB83AA6522C57416007D1930 /* CollectionItem.swift in Sources */,
+				BB83AA1822C572B3007D1930 /* UITableView.swift in Sources */,
+				BB83AA4222C5734D007D1930 /* ChangedData.swift in Sources */,
+				BB83AA2F22C5730E007D1930 /* WagnerFischer.swift in Sources */,
+				BB83AA7522C57499007D1930 /* TableRowConfigurable.swift in Sources */,
+				BB83AA3622C5730E007D1930 /* UICollectionView+Extensions.swift in Sources */,
+				BB83AA6E22C5747A007D1930 /* ConfigurableCell.swift in Sources */,
+				BB83AA6022C57407007D1930 /* TableSection.swift in Sources */,
+				BB83AA7422C57499007D1930 /* ItemConfigurable.swift in Sources */,
+				BB83AA6122C57407007D1930 /* AdapterSection.swift in Sources */,
+				BB83AA2D22C5730E007D1930 /* DeepHashable.swift in Sources */,
+				BB83AA7C22C574B7007D1930 /* TableCellVM.swift in Sources */,
+				BB83AA5422C573B3007D1930 /* TableViewAdapterDelegate.swift in Sources */,
+				BB83AA3222C5730E007D1930 /* MoveReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +586,7 @@
 		BB83AA1322C56BFA007D1930 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +596,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RKCollections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +605,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKCollections;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +614,7 @@
 		BB83AA1422C56BFA007D1930 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +624,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RKCollections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
