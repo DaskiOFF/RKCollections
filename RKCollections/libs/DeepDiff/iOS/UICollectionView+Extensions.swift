@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UICollectionView {
+extension UICollectionView {
   
   /// Animate reload in a batch update
   ///

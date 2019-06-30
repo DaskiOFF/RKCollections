@@ -10,11 +10,7 @@ public protocol RowHeightComputable: class {
 open class TableCellVM: SuperCellVM,
 RowHeightComputable {
     // MARK: - Types
-    #if swift(>=4.2)
     public typealias TableViewCellAccessoryType = UITableViewCell.AccessoryType
-    #else
-    public typealias TableViewCellAccessoryType = UITableViewCellAccessoryType
-    #endif
 
     // MARK: - Properties
     /// Выделяемая ячейка или нет

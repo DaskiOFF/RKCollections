@@ -43,7 +43,7 @@ extension UITableView {
 
         for changeData in changedData {
             let indexPathsVisibleRows = self.indexPathsForVisibleRows ?? []
-            guard let indexCell = indexPathsVisibleRows.index(of: changeData.oldIndexPath) else {
+            guard let indexCell = indexPathsVisibleRows.firstIndex(of: changeData.oldIndexPath) else {
                 continue
             }
 

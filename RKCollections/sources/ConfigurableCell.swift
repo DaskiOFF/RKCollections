@@ -49,13 +49,13 @@ public extension ConfigurableCell where Self: UITableViewCell {
     ///
     /// - Parameter viewModel: viewModel типа ViewModelType
     /// :nodoc:
-    public func bind(viewModel: Any) {
+    func bind(viewModel: Any) {
         self.viewModel = viewModel as? ViewModelType
     }
     
     /// Отвязать viewModel
     /// :nodoc:
-    public func unbind() {
+    func unbind() {
         let vm = self.viewModel
         self.viewModel = nil
         vm?.unbind()
@@ -67,7 +67,7 @@ public extension ConfigurableCell where Self: UITableViewCell {
     /// Тип Any, чтобы избавиться от проблем с дженериками
     ///
     /// - Parameter viewModel: viewModel типа ViewModelType
-    public func configure(with viewModel: Any?) {
+    func configure(with viewModel: Any?) {
         guard let vm = viewModel as? ViewModelType else { return }
         self.configure(with: vm)
     }
@@ -85,13 +85,13 @@ public extension ConfigurableCell where Self: UICollectionViewCell {
     ///
     /// - Parameter viewModel: viewModel типа ViewModelType
     /// :nodoc:
-    public func bind(viewModel: Any) {
+    func bind(viewModel: Any) {
         self.viewModel = viewModel as? ViewModelType
     }
 
     /// Отвязать viewModel
     /// :nodoc:
-    public func unbind() {
+    func unbind() {
         let vm = self.viewModel
         self.viewModel = nil
         vm?.unbind()
@@ -103,7 +103,7 @@ public extension ConfigurableCell where Self: UICollectionViewCell {
     /// Тип Any, чтобы избавиться от проблем с дженериками
     ///
     /// - Parameter viewModel: viewModel типа ViewModelType
-    public func configure(with viewModel: Any?) {
+    func configure(with viewModel: Any?) {
         guard let vm = viewModel as? ViewModelType else { return }
         self.configure(with: vm)
     }

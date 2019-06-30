@@ -7,11 +7,7 @@ open class TableAdapterCallbacks {
     // MARK: - Props
 
     // MARK: - Edit
-    #if swift(>=4.2)
     public typealias TableViewCellEditingStyle = UITableViewCell.EditingStyle
-    #else
-    public typealias TableViewCellEditingStyle = UITableViewCellEditingStyle
-    #endif
 
     public typealias CanEditRow = (UITableView, IndexPath, TableData) -> Bool
     public typealias EditingStyleRow = (UITableView, IndexPath, TableData) -> TableViewCellEditingStyle

@@ -2,13 +2,8 @@ import UIKit
 
 class TableViewAdapterDelegate: NSObject, UITableViewDelegate, UITableViewDataSource {
     // MARK: - Types
-    #if swift(>=4.2)
     public let TableViewAutomaticDimension = UITableView.automaticDimension
     public typealias TableViewCellEditingStyle = UITableViewCell.EditingStyle
-    #else
-    public let TableViewAutomaticDimension = UITableViewAutomaticDimension
-    public typealias TableViewCellEditingStyle = UITableViewCellEditingStyle
-    #endif
 
     // MARK: - Properties
     unowned var holder: TableViewAdapter

@@ -8,12 +8,8 @@
 
 import UIKit
 
-public extension UITableView {
-    #if swift(>=4.2)
+extension UITableView {
     public typealias TableViewRowAnimation = UITableView.RowAnimation
-    #else
-    public typealias TableViewRowAnimation = UITableViewRowAnimation
-    #endif
 
     /// Animate reload in a batch update
     ///

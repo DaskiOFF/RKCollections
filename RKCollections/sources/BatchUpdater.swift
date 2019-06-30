@@ -13,7 +13,7 @@ class BatchUpdater {
         var changedData: [ChangedData] = []
 
         for updateInfo in changes.rowsChanges.updates {
-            guard let oldIndexPath = updateInfo.old, let index = (tableView.indexPathsForVisibleRows ?? []).index(of: oldIndexPath) else {
+            guard let oldIndexPath = updateInfo.old, let index = (tableView.indexPathsForVisibleRows ?? []).firstIndex(of: oldIndexPath) else {
                 filteredUpdates.append(updateInfo)
                 continue
             }
@@ -137,13 +137,13 @@ class BatchUpdater {
                 sectionsChanges.inserts.insert(ins.index)
 
             case .move(let move):
-                let fromIndex = oldList.index(where: { $0.deepDiffHash == move.item.deepDiffHash })!
-                let toIndex = list.index(where: { $0.deepDiffHash == move.item.deepDiffHash })!
+                let fromIndex = oldList.firstIndex(where: { $0.deepDiffHash == move.item.deepDiffHash })!
+                let toIndex = list.firstIndex(where: { $0.deepDiffHash == move.item.deepDiffHash })!
                 guard fromIndex != toIndex else { continue }
                 sectionsChanges.moves.append(SectionsChanges.Move.init(from: fromIndex, to: toIndex))
 
             case .replace(let repl):
-                let newIndex = list.index(where: { $0.deepDiffHash == repl.newItem.deepDiffHash })!
+                let newIndex = list.firstIndex(where: { $0.deepDiffHash == repl.newItem.deepDiffHash })!
                 sectionsChanges.updates.insert(newIndex)
             }
         }
@@ -167,7 +167,7 @@ class BatchUpdater {
         for newListIndex in 0..<list.count {
             if filteredUpdates.contains(newListIndex) {
                 filteredUpdates.remove(newListIndex)
-                guard let oldListIndex = oldList.index(where: { $0.deepDiffHash == list[newListIndex].deepDiffHash }) else {
+                guard let oldListIndex = oldList.firstIndex(where: { $0.deepDiffHash == list[newListIndex].deepDiffHash }) else {
                     continue
                 }
                 sectionsChanges.deletes.insert(oldListIndex)
@@ -203,7 +203,7 @@ class BatchUpdater {
 
             case .replace(let repl):
                 let newIndex = repl.index
-                guard let oldIndex = oldList.index(where: { $0.equal(object: repl.oldItem) }) else {
+                guard let oldIndex = oldList.firstIndex(where: { $0.equal(object: repl.oldItem) }) else {
                     rowsChanges.updates.append(
                         RowsChanges.Update(old: nil, new: IndexPath(row: newIndex, section: newSectionIndex)))
                     break

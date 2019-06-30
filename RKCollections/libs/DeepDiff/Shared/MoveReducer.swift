@@ -19,8 +19,8 @@ struct MoveReducer<T> {
 
     var changes = changes
     inserts.forEach { insert in
-      if let insertIndex = changes.index(where: { insert.item.equal(object: $0.insert?.item) }),
-        let deleteIndex = changes.index(where: { insert.item.equal(object: $0.delete?.item) }) {
+      if let insertIndex = changes.firstIndex(where: { insert.item.equal(object: $0.insert?.item) }),
+        let deleteIndex = changes.firstIndex(where: { insert.item.equal(object: $0.delete?.item) }) {
 
         let insertChange = changes[insertIndex].insert!
         let deleteChange = changes[deleteIndex].delete!
