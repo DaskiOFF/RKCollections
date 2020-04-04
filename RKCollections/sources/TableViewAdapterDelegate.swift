@@ -78,6 +78,9 @@ class TableViewAdapterDelegate: NSObject, UITableViewDelegate, UITableViewDataSo
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section >= holder.list.sections.count {
+            return 0
+        }
         return holder.list.sections[section].numberOfRows
     }
 
